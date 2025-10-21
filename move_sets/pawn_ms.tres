@@ -4,5 +4,6 @@
 
 [resource]
 script = ExtResource("1_gywwg")
-moves = PackedVector2Array(0, -1)
+moves = PackedVector2Array(0, 1)
+can_take_other = false
 metadata/_custom_type_script = "uid://coe2wf2kv6og2"

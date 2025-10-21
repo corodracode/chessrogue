@@ -56,8 +56,8 @@ func is_position_valid(pos: Vector2i) -> bool:
 
 func place_piece(piece_ui: PieceUI, pos: Vector2i):
 	if not is_position_valid(pos): return
+	piece_ui.move(pos)
 	piece_ui.position = (pos + Vector2i.ONE) * 16 + Vector2i.ONE * 8
-	piece_ui.board_position = pos
 
 func try_to_move(pos: Vector2i):
 	var moves = selected.get_moves(self)

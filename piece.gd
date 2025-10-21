@@ -16,5 +16,6 @@ func get_moves(piece_ui: PieceUI, board: Board) -> PackedVector2Array:
 func flip_y_moves():
 	var new_ms: Array[MoveSet]
 	for ms: MoveSet in move_sets:
-		new_ms.append(ms.flip_y_moves())
+		ms.flip_y_moves()
+		new_ms.append(ms)
 	move_sets = new_ms

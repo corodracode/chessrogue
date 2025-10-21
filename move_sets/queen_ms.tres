@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CompoundMoveSet" load_steps=5 format=3 uid="uid://byr4tjwgqgbvj"]
+
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_khpxk"]
+[ext_resource type="Resource" uid="uid://o2i5ruweety5" path="res://move_sets/rook_ms.tres" id="2_pxse7"]
+[ext_resource type="Script" uid="uid://ijm885plx8tu" path="res://compound_move_set.gd" id="2_uhb50"]
+[ext_resource type="Resource" uid="uid://bt3g0dhoimjgq" path="res://move_sets/bishop_ms.tres" id="3_xsmmw"]
+
+[resource]
+script = ExtResource("2_uhb50")
+move_sets = Array[ExtResource("1_khpxk")]([ExtResource("2_pxse7"), ExtResource("3_xsmmw")])
+metadata/_custom_type_script = "uid://ijm885plx8tu"

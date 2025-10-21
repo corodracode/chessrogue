@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="CompoundMoveSet" load_steps=8 format=3 uid="uid://o2i5ruweety5"]
+
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_d3tur"]
+[ext_resource type="Script" uid="uid://77ipotvpj22d" path="res://running_move_set.gd" id="2_isx4i"]
+[ext_resource type="Script" uid="uid://ijm885plx8tu" path="res://compound_move_set.gd" id="2_qxypc"]
+
+[sub_resource type="Resource" id="Resource_v4ce1"]
+script = ExtResource("2_isx4i")
+offset = Vector2i(1, 0)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_0v7tc"]
+script = ExtResource("2_isx4i")
+offset = Vector2i(-1, 0)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_kj3n4"]
+script = ExtResource("2_isx4i")
+offset = Vector2i(0, 1)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_xoemg"]
+script = ExtResource("2_isx4i")
+offset = Vector2i(0, -1)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[resource]
+script = ExtResource("2_qxypc")
+move_sets = Array[ExtResource("1_d3tur")]([SubResource("Resource_v4ce1"), SubResource("Resource_0v7tc"), SubResource("Resource_kj3n4"), SubResource("Resource_xoemg")])
+metadata/_custom_type_script = "uid://ijm885plx8tu"
