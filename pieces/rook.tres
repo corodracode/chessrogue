@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=10 format=3 uid="uid://3y7acq7q1v85"]
+
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_af7dg"]
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_da34m"]
+[ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://piece.gd" id="2_gj6tu"]
+[ext_resource type="Script" uid="uid://77ipotvpj22d" path="res://running_move_set.gd" id="3_bpxm1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyb10"]
+atlas = ExtResource("1_da34m")
+region = Rect2(688, 320, 16, 16)
+
+[sub_resource type="Resource" id="Resource_l7aqg"]
+script = ExtResource("3_bpxm1")
+offset = Vector2i(1, 0)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_bqqlu"]
+script = ExtResource("3_bpxm1")
+offset = Vector2i(-1, 0)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_4voiq"]
+script = ExtResource("3_bpxm1")
+offset = Vector2i(0, 1)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[sub_resource type="Resource" id="Resource_3xwmc"]
+script = ExtResource("3_bpxm1")
+offset = Vector2i(0, -1)
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[resource]
+script = ExtResource("2_gj6tu")
+name = "Rook"
+move_sets = Array[ExtResource("1_af7dg")]([SubResource("Resource_l7aqg"), SubResource("Resource_bqqlu"), SubResource("Resource_4voiq"), SubResource("Resource_3xwmc")])
+icon = SubResource("AtlasTexture_eyb10")
+metadata/_custom_type_script = "uid://d1cxnsidxjn6t"

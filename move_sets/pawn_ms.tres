@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="MoveSet" load_steps=2 format=3 uid="uid://65sf2p261qvc"]
+
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_gywwg"]
+
+[resource]
+script = ExtResource("1_gywwg")
+moves = PackedVector2Array(0, -1)
+metadata/_custom_type_script = "uid://coe2wf2kv6og2"

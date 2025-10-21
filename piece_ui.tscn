@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ixg3fo35dbyb"]
+
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_nxa41"]
+[ext_resource type="Script" uid="uid://ke8250aeqpep" path="res://piece_ui.gd" id="2_ipf3t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1xrd"]
+atlas = ExtResource("1_nxa41")
+region = Rect2(400, 0, 16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g8yu5"]
+size = Vector2(16, 16)
+
+[node name="PieceUI" type="Sprite2D"]
+texture = SubResource("AtlasTexture_y1xrd")
+script = ExtResource("2_ipf3t")
+colors = {
+0: Color(0.7109375, 0.7109375, 0.7109375, 1),
+1: Color(0.69921875, 0.3640372, 0.23216248, 1)
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_g8yu5")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

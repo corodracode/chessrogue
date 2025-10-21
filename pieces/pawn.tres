@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=6 format=3 uid="uid://y8xkpduadeqq"]
+
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_5yryt"]
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_gfpx6"]
+[ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://piece.gd" id="2_gfpx6"]
+[ext_resource type="Resource" uid="uid://65sf2p261qvc" path="res://move_sets/pawn_ms.tres" id="3_0sdp0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sdp0"]
+atlas = ExtResource("1_gfpx6")
+region = Rect2(672, 320, 16, 16)
+
+[resource]
+script = ExtResource("2_gfpx6")
+name = "Pawn"
+move_sets = Array[ExtResource("1_5yryt")]([ExtResource("3_0sdp0")])
+icon = SubResource("AtlasTexture_0sdp0")
+metadata/_custom_type_script = "uid://d1cxnsidxjn6t"

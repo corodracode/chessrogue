@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="StartingPosition" load_steps=23 format=3 uid="uid://ceicuvw57ia2g"]
+
+[ext_resource type="Script" uid="uid://cx82f8ol1h3rf" path="res://starting_position.gd" id="1_p4yg2"]
+[ext_resource type="Script" uid="uid://c6f13geif8frd" path="res://starting_piece.gd" id="2_n134e"]
+[ext_resource type="Resource" uid="uid://3y7acq7q1v85" path="res://pieces/rook.tres" id="3_hf6hv"]
+[ext_resource type="Resource" uid="uid://bw47h66cetiut" path="res://pieces/horse.tres" id="4_2pboy"]
+[ext_resource type="Resource" uid="uid://eud16whiqvx3" path="res://pieces/bishop.tres" id="5_w5hgq"]
+[ext_resource type="Resource" uid="uid://b6cb26pi01sad" path="res://pieces/king.tres" id="6_3tg5r"]
+[ext_resource type="Resource" uid="uid://y8xkpduadeqq" path="res://pieces/pawn.tres" id="9_u1774"]
+
+[sub_resource type="Resource" id="Resource_q4ods"]
+script = ExtResource("2_n134e")
+piece = ExtResource("3_hf6hv")
+starting_position = Vector2i(0, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_y47j0"]
+script = ExtResource("2_n134e")
+piece = ExtResource("4_2pboy")
+starting_position = Vector2i(1, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_u1774"]
+script = ExtResource("2_n134e")
+piece = ExtResource("5_w5hgq")
+starting_position = Vector2i(2, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_3cilh"]
+script = ExtResource("2_n134e")
+piece = ExtResource("6_3tg5r")
+starting_position = Vector2i(4, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_hf6hv"]
+script = ExtResource("2_n134e")
+piece = ExtResource("5_w5hgq")
+starting_position = Vector2i(5, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_2pboy"]
+script = ExtResource("2_n134e")
+piece = ExtResource("4_2pboy")
+starting_position = Vector2i(6, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_w5hgq"]
+script = ExtResource("2_n134e")
+piece = ExtResource("3_hf6hv")
+starting_position = Vector2i(7, 7)
+team = 1
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_wvpfk"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(0, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_e5wpc"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(1, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_8yw1d"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(2, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_kjxfp"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(3, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_lsia5"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(4, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_it7is"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(5, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_nooa2"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(6, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[sub_resource type="Resource" id="Resource_djrrk"]
+script = ExtResource("2_n134e")
+piece = ExtResource("9_u1774")
+starting_position = Vector2i(7, 6)
+team = 1
+flip_y = true
+metadata/_custom_type_script = "uid://c6f13geif8frd"
+
+[resource]
+script = ExtResource("1_p4yg2")
+starting_pieces = Array[ExtResource("2_n134e")]([SubResource("Resource_q4ods"), SubResource("Resource_y47j0"), SubResource("Resource_u1774"), SubResource("Resource_3cilh"), SubResource("Resource_hf6hv"), SubResource("Resource_2pboy"), SubResource("Resource_w5hgq"), SubResource("Resource_wvpfk"), SubResource("Resource_e5wpc"), SubResource("Resource_8yw1d"), SubResource("Resource_kjxfp"), SubResource("Resource_lsia5"), SubResource("Resource_it7is"), SubResource("Resource_nooa2"), SubResource("Resource_djrrk")])
+metadata/_custom_type_script = "uid://cx82f8ol1h3rf"
