@@ -3,6 +3,8 @@ extends TileMapLayer
 
 const PIECEUI = preload("res://piece_ui.tscn")
 
+signal piece_added(piece_ui: PieceUI)
+
 var pieces: Array[PieceUI]
 var selected: PieceUI
 var display_moves: Array[Sprite2D]
@@ -35,10 +37,11 @@ func add_piece(piece: Piece, pos: Vector2i, team: PieceUI.Teams) -> PieceUI:
 	if check_position(pos): return null
 	var piece_ui: PieceUI = PIECEUI.instantiate()
 	pieces_container.add_child(piece_ui)
-	piece_ui.init(piece, pos, team)
+	piece_ui.init(piece, pos, team, self)
 	place_piece(piece_ui, pos)
 	piece_ui.clicked.connect(on_piece_clicked.bind(piece_ui))
 	pieces.append(piece_ui)
+	piece_added.emit(piece_ui)
 	return piece_ui
 
 func on_piece_clicked(piece_ui: PieceUI):

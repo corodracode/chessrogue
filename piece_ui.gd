@@ -25,10 +25,12 @@ func _ready() -> void:
 	if piece:
 		texture = piece.icon
 
-func init(piece: Piece, pos: Vector2i, team: Teams):
+func init(piece: Piece, pos: Vector2i, team: Teams, board: Board):
 	self.piece = piece
 	self.board_position = pos
 	self.team = team
+	for skill: Skill in piece.skills:
+		skill.setup(self, board)
 	texture = piece.icon
 	self_modulate = colors.get(team)
 
@@ -44,6 +46,7 @@ func take_piece(piece_ui: PieceUI):
 	pieces_taken.append(piece_ui)
 
 func move(pos: Vector2i):
-	moves_done.append(board_position)
+	if pos != board_position:
+		moves_done.append(board_position)
+		moved_to.emit(pos)
 	board_position = pos
-	moved_to.emit(pos)

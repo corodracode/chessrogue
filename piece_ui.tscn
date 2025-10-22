@@ -14,8 +14,8 @@ size = Vector2(16, 16)
 texture = SubResource("AtlasTexture_y1xrd")
 script = ExtResource("2_ipf3t")
 colors = {
-0: Color(0.7109375, 0.7109375, 0.7109375, 1),
-1: Color(0.69921875, 0.3640372, 0.23216248, 1)
+0: Color(0.33484334, 0.38, 0.2622, 1),
+1: Color(0.87109375, 0.87109375, 0.87109375, 1)
 }
 
 [node name="Area2D" type="Area2D" parent="."]
