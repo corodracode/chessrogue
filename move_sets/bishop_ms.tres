@@ -7,21 +7,37 @@
 [sub_resource type="Resource" id="Resource_rekf4"]
 script = ExtResource("2_y7wm2")
 offset = Vector2i(1, 1)
+max_distance = null
+moves = null
+can_take_other = null
+can_take_self = null
 metadata/_custom_type_script = "uid://77ipotvpj22d"
 
 [sub_resource type="Resource" id="Resource_aqbfo"]
 script = ExtResource("2_y7wm2")
 offset = Vector2i(-1, 1)
+max_distance = null
+moves = null
+can_take_other = null
+can_take_self = null
 metadata/_custom_type_script = "uid://77ipotvpj22d"
 
 [sub_resource type="Resource" id="Resource_hs1jq"]
 script = ExtResource("2_y7wm2")
 offset = Vector2i(1, -1)
+max_distance = null
+moves = null
+can_take_other = null
+can_take_self = null
 metadata/_custom_type_script = "uid://77ipotvpj22d"
 
 [sub_resource type="Resource" id="Resource_qxqxi"]
 script = ExtResource("2_y7wm2")
 offset = Vector2i(-1, -1)
+max_distance = null
+moves = null
+can_take_other = null
+can_take_self = null
 metadata/_custom_type_script = "uid://77ipotvpj22d"
 
 [resource]

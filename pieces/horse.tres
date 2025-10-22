@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=6 format=3 uid="uid://bw47h66cetiut"]
+[gd_resource type="Resource" script_class="Piece" load_steps=7 format=3 uid="uid://bw47h66cetiut"]
 
 [ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_rer15"]
 [ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="2_swtxr"]
 [ext_resource type="Resource" uid="uid://dih7v5ni7gp28" path="res://move_sets/knight_ms.tres" id="3_ifgx4"]
 [ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://piece.gd" id="4_8cewe"]
+[ext_resource type="Script" uid="uid://bjnvpilq41u6r" path="res://skill.gd" id="5_swtxr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_77mmj"]
 atlas = ExtResource("1_rer15")
@@ -11,7 +12,7 @@ region = Rect2(752, 320, 16, 16)
 
 [resource]
 script = ExtResource("4_8cewe")
-name = "Horse"
+piece_name = "Horse"
 move_sets = Array[ExtResource("2_swtxr")]([ExtResource("3_ifgx4")])
 icon = SubResource("AtlasTexture_77mmj")
 metadata/_custom_type_script = "uid://d1cxnsidxjn6t"

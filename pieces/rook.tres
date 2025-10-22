@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="Piece" load_steps=6 format=3 uid="uid://3y7acq7q1v85"]
+[gd_resource type="Resource" script_class="Piece" load_steps=7 format=3 uid="uid://3y7acq7q1v85"]
 
 [ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_af7dg"]
 [ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_da34m"]
 [ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://piece.gd" id="2_gj6tu"]
 [ext_resource type="Resource" uid="uid://o2i5ruweety5" path="res://move_sets/rook_ms.tres" id="3_da34m"]
+[ext_resource type="Script" uid="uid://bjnvpilq41u6r" path="res://skill.gd" id="5_bpxm1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyb10"]
 atlas = ExtResource("1_da34m")
@@ -11,7 +12,7 @@ region = Rect2(688, 320, 16, 16)
 
 [resource]
 script = ExtResource("2_gj6tu")
-name = "Rook"
+piece_name = "Rook"
 move_sets = Array[ExtResource("1_af7dg")]([ExtResource("3_da34m")])
 icon = SubResource("AtlasTexture_eyb10")
 metadata/_custom_type_script = "uid://d1cxnsidxjn6t"
