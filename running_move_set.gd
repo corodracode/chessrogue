@@ -3,6 +3,9 @@ extends MoveSet
 
 @export var offset: Vector2i
 @export var max_distance: int = 100
+@export var is_blocked_by_same_team: bool = true
+@export var is_blocked_by_other_team: bool = true
+
 
 func get_moves(piece_ui: PieceUI, board: Board):
 	var distance: int
@@ -30,5 +33,10 @@ func flip_y_moves():
 func can_move(piece_ui: PieceUI, board: Board, pos: Vector2i) -> bool:
 	var is_valid := board.is_position_valid(pos)
 	var p := board.check_position(pos)
-	var is_free: bool = not (p and p.team == piece_ui.team)
-	return (is_free and is_valid)
+	var is_piece_same_team: bool = (p and p.team == piece_ui.team)
+	var is_piece_other_team: bool = (p and p.team != piece_ui.team)
+	var is_blocked = is_piece_other_team and is_blocked_by_other_team \
+			and not can_take_other \
+			or is_piece_same_team and is_blocked_by_same_team \
+			and not can_take_self
+	return is_valid and not is_blocked
