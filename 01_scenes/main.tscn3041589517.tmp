@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=4 uid="uid://cyy7psofi1osr"]
 
-[ext_resource type="Script" uid="uid://sr0l16w0h4ji" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://assets/colored-transparent_packed.png" id="1_ig7tw"]
-[ext_resource type="Script" uid="uid://dvqrg6kb5yiti" path="res://board.gd" id="2_0xm2m"]
-[ext_resource type="Texture2D" uid="uid://bi4mfurjii6c2" path="res://assets/position_marker.tres" id="4_1bvp3"]
-[ext_resource type="Shader" uid="uid://dbehqdyfpb1f1" path="res://main.gdshader" id="5_lquwl"]
+[ext_resource type="Script" uid="uid://sr0l16w0h4ji" path="res://01 scenes/main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://00 assets/colored-transparent_packed.png" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dvqrg6kb5yiti" path="res://01 scenes/board.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bi4mfurjii6c2" path="res://00 assets/position_marker.tres" id="4_1bvp3"]
+[ext_resource type="Shader" uid="uid://dbehqdyfpb1f1" path="res://01 scenes/main.gdshader" id="5_lquwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("1_ig7tw")

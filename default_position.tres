@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="StartingPosition" load_steps=41 format=3 uid="uid://ceicuvw57ia2g"]
 
-[ext_resource type="Script" uid="uid://cx82f8ol1h3rf" path="res://starting_position.gd" id="1_p4yg2"]
-[ext_resource type="Script" uid="uid://c6f13geif8frd" path="res://starting_piece.gd" id="2_n134e"]
-[ext_resource type="Resource" uid="uid://3y7acq7q1v85" path="res://pieces/rook.tres" id="3_hf6hv"]
-[ext_resource type="Resource" uid="uid://bw47h66cetiut" path="res://pieces/horse.tres" id="4_2pboy"]
-[ext_resource type="Resource" uid="uid://eud16whiqvx3" path="res://pieces/bishop.tres" id="5_w5hgq"]
-[ext_resource type="Resource" uid="uid://b6cb26pi01sad" path="res://pieces/king.tres" id="6_3tg5r"]
-[ext_resource type="Resource" uid="uid://gbvyos3v4ou2" path="res://pieces/queen.tres" id="6_w5hgq"]
-[ext_resource type="Resource" uid="uid://y8xkpduadeqq" path="res://pieces/pawn.tres" id="9_u1774"]
+[ext_resource type="Script" uid="uid://cx82f8ol1h3rf" path="res://02_scripts/starting_position.gd" id="1_p4yg2"]
+[ext_resource type="Script" uid="uid://c6f13geif8frd" path="res://02_scripts/starting_piece.gd" id="2_n134e"]
+[ext_resource type="Resource" uid="uid://3y7acq7q1v85" path="res://03_pieces/rook.tres" id="3_hf6hv"]
+[ext_resource type="Resource" uid="uid://bw47h66cetiut" path="res://03_pieces/horse.tres" id="4_2pboy"]
+[ext_resource type="Resource" uid="uid://eud16whiqvx3" path="res://03_pieces/bishop.tres" id="5_w5hgq"]
+[ext_resource type="Resource" uid="uid://b6cb26pi01sad" path="res://03_pieces/king.tres" id="6_3tg5r"]
+[ext_resource type="Resource" uid="uid://gbvyos3v4ou2" path="res://03_pieces/queen.tres" id="6_w5hgq"]
+[ext_resource type="Resource" uid="uid://y8xkpduadeqq" path="res://03_pieces/pawn.tres" id="9_u1774"]
 
 [sub_resource type="Resource" id="Resource_q4ods"]
 script = ExtResource("2_n134e")

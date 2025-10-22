@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CompoundMoveSet" load_steps=8 format=3 uid="uid://bt3g0dhoimjgq"]
 
-[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://move_set.gd" id="1_f4det"]
-[ext_resource type="Script" uid="uid://ijm885plx8tu" path="res://compound_move_set.gd" id="2_tw43o"]
-[ext_resource type="Script" uid="uid://77ipotvpj22d" path="res://running_move_set.gd" id="2_y7wm2"]
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://02_scripts/move_set.gd" id="1_f4det"]
+[ext_resource type="Script" uid="uid://ijm885plx8tu" path="res://02_scripts/compound_move_set.gd" id="2_tw43o"]
+[ext_resource type="Script" uid="uid://77ipotvpj22d" path="res://02_scripts/running_move_set.gd" id="2_y7wm2"]
 
 [sub_resource type="Resource" id="Resource_rekf4"]
 script = ExtResource("2_y7wm2")

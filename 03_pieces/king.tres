@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=7 format=3 uid="uid://b6cb26pi01sad"]
+
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://00_assets/colored-transparent_packed.png" id="1_43512"]
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://02_scripts/move_set.gd" id="2_eepcv"]
+[ext_resource type="Resource" uid="uid://b24fs3an6iyv7" path="res://04_move_sets/king_ms.tres" id="3_43512"]
+[ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://02_scripts/piece.gd" id="4_74f6l"]
+[ext_resource type="Script" uid="uid://bjnvpilq41u6r" path="res://02_scripts/skill.gd" id="5_eepcv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77mmj"]
+atlas = ExtResource("1_43512")
+region = Rect2(736, 320, 16, 16)
+
+[resource]
+script = ExtResource("4_74f6l")
+piece_name = "King"
+move_sets = Array[ExtResource("2_eepcv")]([ExtResource("3_43512")])
+icon = SubResource("AtlasTexture_77mmj")
+metadata/_custom_type_script = "uid://d1cxnsidxjn6t"

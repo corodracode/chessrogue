@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=7 format=3 uid="uid://gbvyos3v4ou2"]
+
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://00_assets/colored-transparent_packed.png" id="1_g8y3h"]
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://02_scripts/move_set.gd" id="1_oyq2j"]
+[ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://02_scripts/piece.gd" id="2_4nm24"]
+[ext_resource type="Resource" uid="uid://byr4tjwgqgbvj" path="res://04_move_sets/queen_ms.tres" id="3_asu4h"]
+[ext_resource type="Script" uid="uid://bjnvpilq41u6r" path="res://02_scripts/skill.gd" id="5_asu4h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3dje"]
+atlas = ExtResource("1_g8y3h")
+region = Rect2(720, 320, 16, 16)
+
+[resource]
+script = ExtResource("2_4nm24")
+piece_name = "Queen"
+move_sets = Array[ExtResource("1_oyq2j")]([ExtResource("3_asu4h")])
+icon = SubResource("AtlasTexture_o3dje")
+metadata/_custom_type_script = "uid://d1cxnsidxjn6t"

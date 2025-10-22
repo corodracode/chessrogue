@@ -1,7 +1,7 @@
 class_name Board
 extends TileMapLayer
 
-const PIECEUI = preload("res://piece_ui.tscn")
+const PIECEUI = preload("res://01_scenes/piece_ui.tscn")
 
 signal piece_added(piece_ui: PieceUI)
 
@@ -86,7 +86,7 @@ func draw_move(pos: Vector2i):
 	var sprite = Sprite2D.new()
 	markers.add_child(sprite)
 	display_moves.append(sprite)
-	sprite.texture = preload("res://assets/point_display_moves.tres")
+	sprite.texture = preload("res://00_assets/point_display_moves.tres")
 	sprite.global_position = Vector2(pos + Vector2i.ONE) * 16 + Vector2.ONE * 8 + global_position
 
 func clear_moves():

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Piece" load_steps=7 format=3 uid="uid://eud16whiqvx3"]
+
+[ext_resource type="Script" uid="uid://d1cxnsidxjn6t" path="res://02_scripts/piece.gd" id="1_2ni7a"]
+[ext_resource type="Texture2D" uid="uid://cipwujs5l5p65" path="res://00_assets/colored-transparent_packed.png" id="1_bl1es"]
+[ext_resource type="Script" uid="uid://coe2wf2kv6og2" path="res://02_scripts/move_set.gd" id="1_l8t2j"]
+[ext_resource type="Resource" uid="uid://bt3g0dhoimjgq" path="res://04_move_sets/bishop_ms.tres" id="3_bl1es"]
+[ext_resource type="Script" uid="uid://bjnvpilq41u6r" path="res://02_scripts/skill.gd" id="5_nteju"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nteju"]
+atlas = ExtResource("1_bl1es")
+region = Rect2(704, 320, 16, 16)
+
+[resource]
+script = ExtResource("1_2ni7a")
+piece_name = "Bishop"
+move_sets = Array[ExtResource("1_l8t2j")]([ExtResource("3_bl1es")])
+icon = SubResource("AtlasTexture_nteju")
+metadata/_custom_type_script = "uid://d1cxnsidxjn6t"
