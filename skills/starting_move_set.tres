@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://dnws2redyr26u"]
+
+[ext_resource type="Script" uid="uid://bcu7d6251olcj" path="res://skills/starting_move_set.gd" id="1_x2vwy"]
+[ext_resource type="Script" uid="uid://77ipotvpj22d" path="res://running_move_set.gd" id="2_x2vwy"]
+
+[sub_resource type="Resource" id="Resource_mahbg"]
+script = ExtResource("2_x2vwy")
+offset = Vector2i(0, 1)
+max_distance = 2
+can_take_other = false
+metadata/_custom_type_script = "uid://77ipotvpj22d"
+
+[resource]
+script = ExtResource("1_x2vwy")
+starting_ms = SubResource("Resource_mahbg")
+skill_name = "Starting Move Set"
+metadata/_custom_type_script = "uid://bjnvpilq41u6r"
